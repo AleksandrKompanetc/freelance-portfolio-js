@@ -1,0 +1,28 @@
+@import "./reset.css";
+
+html, body {
+  font-family: sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  width: 1200px;
+}
+
+/* Nav */
+
+.nav {
+  padding: 20px 0;
+  border-bottom: #26292D;
+  background-color: #171718;
+  color: #FFF;
+}
+
+.nav-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 30px;
+  row-gap: 20px;
+}
