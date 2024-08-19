@@ -3,10 +3,11 @@
 
 :root {
   --black: #171718;
-  --black-border: #171718;
+  --black-border: #26292D;
   --white: #fff;
   --purple: #5C62EC;
 
+  --text-color: var(--black);
   --dark-bg: var(--black);
   --dark-border:var(--black-border);
   --header-text:var(--white);
@@ -14,7 +15,9 @@
 }
 
 html, body {
+  letter-spacing: -0.5px;
   font-family: sans-serif;
+  color: var(--text-color);
 }
 
 .container {
@@ -30,6 +33,7 @@ html, body {
   border-bottom: 1px solid var(--dark-border);
   background-color: var(--dark-bg);
   color: var(--header-text);
+  letter-spacing: normal;
 }
 
 .nav-row {
@@ -76,4 +80,68 @@ html, body {
   height: 2px;
   width: 100%;
   background: var(--accent);
+}
+
+/* Header */
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 40px 0;
+  min-height: 695px;
+
+  background-color: var(--dark-bg);
+  color: var(--header-text);
+  text-align: center;
+}
+
+.header__wrapper {
+  padding: 0 15px;
+  max-width: 660px;
+}
+
+.header__title {
+  margin-bottom: 20px;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.header__title strong {
+  font-size: 60px;
+  font-weight: 700;
+}
+
+.header__title em {
+  font-style: normal;
+  color: var(--accent);
+}
+
+.header__text {
+  margin-bottom: 40px;
+  font-size: 18px;
+  line-height: 1.333;
+}
+
+.header-text p + p {
+  margin-top: 0.5em;
+}
+
+.btn {
+  display: inline-block;
+  height: 48px;
+
+  padding: 12px 28px;
+  border-radius: 5px;
+  background-color: var(--accent);
+  color: var(--white);
+  letter-spacing: 0.15px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.btn:hover {
+  opacity: 0.8;
 }
